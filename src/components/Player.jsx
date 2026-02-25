@@ -1,7 +1,7 @@
 import { useState,useRef } from "react";
 
 export default function Player() {
-  console.log(useState("devender"))
+
   let invalidName=false;
   const [name, setName] = useState(null);
   const refName=useRef();
