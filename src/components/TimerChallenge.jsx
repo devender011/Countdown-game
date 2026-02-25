@@ -8,7 +8,7 @@ function TimerChallenge({ title, challengeDuration }) {
 //to stop the timer and open you lose modal screen
    useEffect(()=>{
      if (remainingTime <= 0) {
-        console.log(remainingTime)
+       
         handelStop()
     }
    },[remainingTime])
@@ -27,7 +27,7 @@ function TimerChallenge({ title, challengeDuration }) {
     };
 //function called when btn is presed when remaining time is less that challengeduarion*1000
     function handelStop() {
-        console.log("interval ID",timer.current)
+     
         //stops the setinterval fucntion --->timer.current stores interval id 
         clearInterval(timer.current);
         //open the modal screen
